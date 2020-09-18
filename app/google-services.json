@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "663066209436",
+    "firebase_url": "https://graffiti-32e63.firebaseio.com",
+    "project_id": "graffiti-32e63",
+    "storage_bucket": "graffiti-32e63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663066209436:android:52c146dd7f43765d599159",
+        "android_client_info": {
+          "package_name": "com.example.grafiti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663066209436-fnf0o5agcbhk1r1fdlsnitnvt2kr31h1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.grafiti",
+            "certificate_hash": "ee323b741c70ffe6113c40287d5d0fe230fd97cf"
+          }
+        },
+        {
+          "client_id": "663066209436-bkbj4tjo2ei8nps49a81sv9kr1u9dmap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWiSfXNq20of02qrTiRq2zR1-iL38CAS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663066209436-bkbj4tjo2ei8nps49a81sv9kr1u9dmap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

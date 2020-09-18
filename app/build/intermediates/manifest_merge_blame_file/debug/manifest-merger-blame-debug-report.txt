@@ -1,0 +1,286 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.grafiti"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml
+10
+11    <!-- osm permissions -->
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:6:5-80
+12-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:7:5-78
+13-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+14-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:8:5-84
+14-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:8:22-82
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:9:5-76
+15-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:9:22-73
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:10:5-79
+16-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:10:22-76
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:11:5-67
+17-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:11:22-64
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:12:5-81
+18-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:12:22-78
+19
+20    <supports-screens
+20-->[org.osmdroid:osmdroid-android:6.1.2] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cfdb4909f9d4fa7d980b545a361a19ae\osmdroid-android-6.1.2\AndroidManifest.xml:11:5-14:40
+21        android:anyDensity="true"
+21-->[org.osmdroid:osmdroid-android:6.1.2] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cfdb4909f9d4fa7d980b545a361a19ae\osmdroid-android-6.1.2\AndroidManifest.xml:12:9-34
+22        android:largeScreens="true"
+22-->[org.osmdroid:osmdroid-android:6.1.2] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cfdb4909f9d4fa7d980b545a361a19ae\osmdroid-android-6.1.2\AndroidManifest.xml:13:9-36
+23        android:normalScreens="true" />
+23-->[org.osmdroid:osmdroid-android:6.1.2] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cfdb4909f9d4fa7d980b545a361a19ae\osmdroid-android-6.1.2\AndroidManifest.xml:14:9-37
+24
+25    <uses-feature
+25-->[org.osmdroid:osmdroid-android:6.1.2] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cfdb4909f9d4fa7d980b545a361a19ae\osmdroid-android-6.1.2\AndroidManifest.xml:16:5-18:36
+26        android:name="android.hardware.location.network"
+26-->[org.osmdroid:osmdroid-android:6.1.2] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cfdb4909f9d4fa7d980b545a361a19ae\osmdroid-android-6.1.2\AndroidManifest.xml:17:9-57
+27        android:required="false" />
+27-->[org.osmdroid:osmdroid-android:6.1.2] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cfdb4909f9d4fa7d980b545a361a19ae\osmdroid-android-6.1.2\AndroidManifest.xml:18:9-33
+28    <uses-feature
+28-->[org.osmdroid:osmdroid-android:6.1.2] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cfdb4909f9d4fa7d980b545a361a19ae\osmdroid-android-6.1.2\AndroidManifest.xml:19:5-21:36
+29        android:name="android.hardware.location.gps"
+29-->[org.osmdroid:osmdroid-android:6.1.2] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cfdb4909f9d4fa7d980b545a361a19ae\osmdroid-android-6.1.2\AndroidManifest.xml:20:9-53
+30        android:required="false" />
+30-->[org.osmdroid:osmdroid-android:6.1.2] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cfdb4909f9d4fa7d980b545a361a19ae\osmdroid-android-6.1.2\AndroidManifest.xml:21:9-33
+31    <uses-feature
+31-->[org.osmdroid:osmdroid-android:6.1.2] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cfdb4909f9d4fa7d980b545a361a19ae\osmdroid-android-6.1.2\AndroidManifest.xml:22:5-24:36
+32        android:name="android.hardware.telephony"
+32-->[org.osmdroid:osmdroid-android:6.1.2] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cfdb4909f9d4fa7d980b545a361a19ae\osmdroid-android-6.1.2\AndroidManifest.xml:23:9-50
+33        android:required="false" />
+33-->[org.osmdroid:osmdroid-android:6.1.2] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cfdb4909f9d4fa7d980b545a361a19ae\osmdroid-android-6.1.2\AndroidManifest.xml:24:9-33
+34    <uses-feature
+34-->[org.osmdroid:osmdroid-android:6.1.2] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cfdb4909f9d4fa7d980b545a361a19ae\osmdroid-android-6.1.2\AndroidManifest.xml:25:5-27:36
+35        android:name="android.hardware.wifi"
+35-->[org.osmdroid:osmdroid-android:6.1.2] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cfdb4909f9d4fa7d980b545a361a19ae\osmdroid-android-6.1.2\AndroidManifest.xml:26:9-45
+36        android:required="false" />
+36-->[org.osmdroid:osmdroid-android:6.1.2] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cfdb4909f9d4fa7d980b545a361a19ae\osmdroid-android-6.1.2\AndroidManifest.xml:27:9-33
+37
+38    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+38-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\64aa151df9e219568c9ad2452312338c\play-services-measurement-api-17.2.1\AndroidManifest.xml:24:5-68
+38-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\64aa151df9e219568c9ad2452312338c\play-services-measurement-api-17.2.1\AndroidManifest.xml:24:22-65
+39    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+39-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\8e397cd6a7915db9929739d0be3c79b8\firebase-iid-19.0.0\AndroidManifest.xml:26:5-82
+39-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\8e397cd6a7915db9929739d0be3c79b8\firebase-iid-19.0.0\AndroidManifest.xml:26:22-79
+40    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+40-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:26:5-110
+40-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:26:22-107
+41
+42    <application
+42-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:14:5-32:19
+43        android:allowBackup="true"
+43-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:15:9-35
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.1.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\9b282167d5edf2ce15b1570bf9b055c0\core-1.1.0\AndroidManifest.xml:24:18-86
+45        android:debuggable="true"
+46        android:icon="@mipmap/ic_launcher"
+46-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:16:9-43
+47        android:label="@string/app_name"
+47-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:17:9-41
+48        android:roundIcon="@mipmap/ic_launcher_round"
+48-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:18:9-54
+49        android:supportsRtl="true"
+49-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:19:9-35
+50        android:testOnly="true"
+51        android:theme="@style/ActivityTheme.Primary.Base.Light" >
+51-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:20:9-64
+52        <activity android:name="com.zybooks.graffiti.MapActivity" />
+52-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:21:9-58
+52-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:21:19-46
+53        <activity android:name="com.zybooks.graffiti.DrawActivity" />
+53-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:22:9-59
+53-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:22:19-47
+54        <activity android:name="com.zybooks.graffiti.ViewActivity" />
+54-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:23:9-59
+54-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:23:19-47
+55        <activity android:name="com.zybooks.graffiti.ViewGraffiti" />
+55-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:24:9-59
+55-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:24:19-47
+56        <activity android:name="com.zybooks.graffiti.MainActivity" >
+56-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:25:9-31:20
+56-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:25:19-47
+57            <intent-filter>
+57-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:26:13-30:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:27:17-69
+58-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:27:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:29:17-77
+60-->C:\Users\josia\OneDrive\UCSC\Fall_2019\CSE_118\GraffitiV7\Grafiti\app\src\main\AndroidManifest.xml:29:27-74
+61            </intent-filter>
+62        </activity>
+63        <activity
+63-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cb165ad0c410fc65e42c2e69ebc8fb53\firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
+64            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+64-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cb165ad0c410fc65e42c2e69ebc8fb53\firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
+65            android:excludeFromRecents="true"
+65-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cb165ad0c410fc65e42c2e69ebc8fb53\firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
+66            android:exported="true"
+66-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cb165ad0c410fc65e42c2e69ebc8fb53\firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
+67            android:launchMode="singleTask"
+67-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cb165ad0c410fc65e42c2e69ebc8fb53\firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
+68            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+68-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cb165ad0c410fc65e42c2e69ebc8fb53\firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
+69            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+69-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cb165ad0c410fc65e42c2e69ebc8fb53\firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
+70
+71        <service
+71-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cb165ad0c410fc65e42c2e69ebc8fb53\firebase-auth-19.2.0\AndroidManifest.xml:33:9-39:19
+72            android:name="com.google.firebase.components.ComponentDiscoveryService"
+72-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cb165ad0c410fc65e42c2e69ebc8fb53\firebase-auth-19.2.0\AndroidManifest.xml:34:13-84
+73            android:directBootAware="true"
+73-->[com.google.firebase:firebase-common:19.3.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\14a2aefddb4686d0a5d56a1bab9434df\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+74            android:exported="false" >
+74-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cb165ad0c410fc65e42c2e69ebc8fb53\firebase-auth-19.2.0\AndroidManifest.xml:35:13-37
+75            <meta-data
+75-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cb165ad0c410fc65e42c2e69ebc8fb53\firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
+76                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+76-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cb165ad0c410fc65e42c2e69ebc8fb53\firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\cb165ad0c410fc65e42c2e69ebc8fb53\firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
+78            <meta-data
+78-->[com.google.firebase:firebase-database:19.2.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\9209bec148561620729e9a8f50f40b76\firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
+79                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+79-->[com.google.firebase:firebase-database:19.2.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\9209bec148561620729e9a8f50f40b76\firebase-database-19.2.0\AndroidManifest.xml:33:17-109
+80                android:value="com.google.firebase.components.ComponentRegistrar" />
+80-->[com.google.firebase:firebase-database:19.2.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\9209bec148561620729e9a8f50f40b76\firebase-database-19.2.0\AndroidManifest.xml:34:17-82
+81            <meta-data
+81-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\64aa151df9e219568c9ad2452312338c\play-services-measurement-api-17.2.1\AndroidManifest.xml:30:13-32:85
+82                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+82-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\64aa151df9e219568c9ad2452312338c\play-services-measurement-api-17.2.1\AndroidManifest.xml:31:17-139
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\64aa151df9e219568c9ad2452312338c\play-services-measurement-api-17.2.1\AndroidManifest.xml:32:17-82
+84            <meta-data
+84-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\8e397cd6a7915db9929739d0be3c79b8\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+85                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+85-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\8e397cd6a7915db9929739d0be3c79b8\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\8e397cd6a7915db9929739d0be3c79b8\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+87        </service>
+88
+89        <activity
+89-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\932ff712aa1d906347110e7547a64025\play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
+90            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+90-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\932ff712aa1d906347110e7547a64025\play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
+91            android:excludeFromRecents="true"
+91-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\932ff712aa1d906347110e7547a64025\play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
+92            android:exported="false"
+92-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\932ff712aa1d906347110e7547a64025\play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
+93            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+93-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\932ff712aa1d906347110e7547a64025\play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
+94        <!--
+95            Service handling Google Sign-In user revocation. For apps that do not integrate with
+96            Google Sign-In, this service will never be started.
+97        -->
+98        <service
+98-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\932ff712aa1d906347110e7547a64025\play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
+99            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+99-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\932ff712aa1d906347110e7547a64025\play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
+100            android:exported="true"
+100-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\932ff712aa1d906347110e7547a64025\play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
+101            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+101-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\932ff712aa1d906347110e7547a64025\play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
+102
+103        <receiver
+103-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\8e397cd6a7915db9929739d0be3c79b8\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+104            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+104-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\8e397cd6a7915db9929739d0be3c79b8\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+105            android:exported="true"
+105-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\8e397cd6a7915db9929739d0be3c79b8\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+106            android:permission="com.google.android.c2dm.permission.SEND" >
+106-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\8e397cd6a7915db9929739d0be3c79b8\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+107            <intent-filter>
+107-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\8e397cd6a7915db9929739d0be3c79b8\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+108                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+108-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\8e397cd6a7915db9929739d0be3c79b8\firebase-iid-19.0.0\AndroidManifest.xml:42:17-81
+108-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\8e397cd6a7915db9929739d0be3c79b8\firebase-iid-19.0.0\AndroidManifest.xml:42:25-78
+109            </intent-filter>
+110        </receiver>
+111
+112        <activity
+112-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\848d57a5cf9d4e74f1f21d2797a64967\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+113            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+113-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\848d57a5cf9d4e74f1f21d2797a64967\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+114            android:exported="false"
+114-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\848d57a5cf9d4e74f1f21d2797a64967\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+115            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+115-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\848d57a5cf9d4e74f1f21d2797a64967\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+116
+117        <provider
+117-->[com.google.firebase:firebase-common:19.3.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\14a2aefddb4686d0a5d56a1bab9434df\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+118            android:name="com.google.firebase.provider.FirebaseInitProvider"
+118-->[com.google.firebase:firebase-common:19.3.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\14a2aefddb4686d0a5d56a1bab9434df\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+119            android:authorities="com.example.grafiti.firebaseinitprovider"
+119-->[com.google.firebase:firebase-common:19.3.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\14a2aefddb4686d0a5d56a1bab9434df\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+120            android:exported="false"
+120-->[com.google.firebase:firebase-common:19.3.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\14a2aefddb4686d0a5d56a1bab9434df\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+121            android:initOrder="100" />
+121-->[com.google.firebase:firebase-common:19.3.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\14a2aefddb4686d0a5d56a1bab9434df\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+122
+123        <receiver
+123-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:29:9-33:20
+124            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+124-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:30:13-85
+125            android:enabled="true"
+125-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:31:13-35
+126            android:exported="false" >
+126-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:32:13-37
+127        </receiver>
+128        <receiver
+128-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:34:9-42:20
+129            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+129-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:35:13-100
+130            android:enabled="true"
+130-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:36:13-35
+131            android:exported="true"
+131-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:37:13-36
+132            android:permission="android.permission.INSTALL_PACKAGES" >
+132-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:38:13-69
+133            <intent-filter>
+133-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:39:13-41:29
+134                <action android:name="com.android.vending.INSTALL_REFERRER" />
+134-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:40:17-79
+134-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:40:25-76
+135            </intent-filter>
+136        </receiver>
+137
+138        <service
+138-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:44:9-47:40
+139            android:name="com.google.android.gms.measurement.AppMeasurementService"
+139-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:45:13-84
+140            android:enabled="true"
+140-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:46:13-35
+141            android:exported="false" />
+141-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:47:13-37
+142        <service
+142-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:48:9-52:72
+143            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+143-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:49:13-87
+144            android:enabled="true"
+144-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:50:13-35
+145            android:exported="false"
+145-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:51:13-37
+146            android:permission="android.permission.BIND_JOB_SERVICE" />
+146-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\aad712e057cc809bb013c83e84b50337\play-services-measurement-17.2.1\AndroidManifest.xml:52:13-69
+147
+148        <meta-data
+148-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\fd3abb9385c3a227c897325b1b4ed37a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+149            android:name="com.google.android.gms.version"
+149-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\fd3abb9385c3a227c897325b1b4ed37a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+150            android:value="@integer/google_play_services_version" />
+150-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\josia\.gradle\caches\transforms-2\files-2.1\fd3abb9385c3a227c897325b1b4ed37a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+151    </application>
+152
+153</manifest>

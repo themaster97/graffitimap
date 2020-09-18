@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.PicnicSupermarket:FingerPaintView:1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/255891ba67b23e015291ab65b4fe41f1/jetified-FingerPaintView-1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/255891ba67b23e015291ab65b4fe41f1/jetified-FingerPaintView-1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/255891ba67b23e015291ab65b4fe41f1/jetified-FingerPaintView-1.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bgColor"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/menuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menuTitle"
+        android:textAppearance="@android:style/TextAppearance.Material.Display3"
+        android:textColor="?attr/textColor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exploreBtn"
+        android:gravity="center"
+        android:layout_width="131dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
+        android:background="?attr/btnColor"
+        android:text="@string/explore"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textColor="@color/White"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/drawBtn"
+        android:gravity="center"
+        android:layout_width="96dp"
+        android:layout_height="55dp"
+        android:background="?attr/btnColor"
+        android:text="@string/draw"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textColor="@color/White"
+        app:layout_constraintBottom_toBottomOf="@+id/exploreBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/exploreBtn" />
+
+    <Button
+        android:id="@+id/quitBtn"
+        android:gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:background="?attr/btnColor"
+        android:text="@string/quit"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textColor="@color/White"
+        app:layout_constraintBottom_toBottomOf="@+id/exploreBtn"
+        app:layout_constraintEnd_toStartOf="@+id/exploreBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/graffiti_map_3" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/colorTheme"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="?attr/textColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/quitBtn"
+        app:layout_constraintTop_toBottomOf="@+id/quitBtn"
+        app:layout_constraintVertical_bias="0.437" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

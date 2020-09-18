@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bgColor"
+    tools:context=".DrawActivity">
+
+    <Spinner
+        android:id="@+id/weightSpinner"
+        android:layout_width="164dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/finger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/colorSpinner"
+        android:layout_width="164dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/finger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <tech.picnic.fingerpaintview.FingerPaintImageView
+        android:id="@+id/finger"
+        android:layout_width="375dp"
+        android:layout_height="390dp"
+        android:src="@drawable/ic_launcher_background"
+        app:inEditMode="true"
+        app:layout_constraintBottom_toTopOf="@+id/drawSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <Button
+        android:id="@+id/drawCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="63dp"
+        android:background="?attr/btnColor"
+        android:onClick="onCancelBtn"
+        android:text="@string/cancel"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textColor="@color/White"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/drawSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="63dp"
+        android:background="?attr/btnColor"
+        android:onClick="onSubmitBtn"
+        android:text="@string/submit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/White"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

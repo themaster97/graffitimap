@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="ActivityTheme.Primary.Base.Light" parent="Theme.AppCompat.NoActionBar">
+        <item name="textColor">@color/colorPrimaryDark</item>
+        <item name="btnColor">#2389b9</item>
+        <item name="primaryColor">@color/colorPrimary</item>
+        <item name="bgColor">@color/colorLight</item>
+    </style>
+
+    <style name="ActivityTheme.Primary.Base.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="textColor">#B1F1DD</item>
+        <item name="btnColor">#1C351C</item>
+        <item name="primaryColor">#295547</item>
+        <item name="bgColor">#06061F</item>
+    </style>
+
+</resources>
